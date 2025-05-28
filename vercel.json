@@ -1,9 +1,7 @@
 {
-  "functions": {
-    "api/main.py": {
-      "runtime": "python3.9"
-    }
-  },
+  "builds": [
+    { "src": "api/main.py", "use": "@vercel/python" }
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
@@ -13,12 +11,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "NEO4J_URI": "@neo4j_uri",
-    "NEO4J_USERNAME": "@neo4j_username", 
-    "NEO4J_PASSWORD": "@neo4j_password",
-    "NEO4J_DATABASE": "@neo4j_database",
-    "OPENAI_API_KEY": "@openai_api_key"
-  }
+  ]
 } 
