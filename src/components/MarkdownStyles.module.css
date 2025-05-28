@@ -1,0 +1,150 @@
+/* MarkdownStyles.module.css */
+.markdownContent {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.markdownContent h1,
+.markdownContent h2,
+.markdownContent h3,
+.markdownContent h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+}
+
+.markdownContent h1 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  padding-bottom: 0.3em;
+}
+
+.markdownContent h2 {
+  font-size: 1.25rem;
+}
+
+.markdownContent h3 {
+  font-size: 1.125rem;
+}
+
+.markdownContent p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.markdownContent ul,
+.markdownContent ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.markdownContent ul {
+  list-style-type: disc;
+}
+
+.markdownContent ol {
+  list-style-type: decimal;
+}
+
+.markdownContent li {
+  margin: 0.5em 0;
+}
+
+.markdownContent code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.markdownContent pre {
+  overflow-x: auto;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 1.5em 0;
+}
+
+.markdownContent pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.markdownContent blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  margin: 1em 0;
+}
+
+.markdownContent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdownContent table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  overflow-x: auto;
+  display: block;
+}
+
+.markdownContent table th,
+.markdownContent table td {
+  border: 1px solid #dfe2e5;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.markdownContent table th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+.markdownContent table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.markdownContent a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdownContent a:hover {
+  text-decoration: underline;
+}
+
+.markdownContent hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 1.5em 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+/* Dark mode overrides */
+:global(.dark) .markdownContent code {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+:global(.dark) .markdownContent blockquote {
+  border-left-color: #4b5563;
+  color: #9ca3af;
+}
+
+:global(.dark) .markdownContent table th {
+  background-color: #374151;
+}
+
+:global(.dark) .markdownContent table td,
+:global(.dark) .markdownContent table th {
+  border-color: #4b5563;
+}
+
+:global(.dark) .markdownContent a {
+  color: #58a6ff;
+}
+
+:global(.dark) .markdownContent hr {
+  background-color: #4b5563;
+} 
